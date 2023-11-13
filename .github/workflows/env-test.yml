@@ -1,0 +1,11 @@
+name: Variable Test
+on:
+  workflow_dispatch
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    env:
+      Greeting: Hello
+    steps:
+      - name: "Say Hello Mona it's Monday"
+        run: echo "$Greeting SP_USERNAME $SP_USERNAME SP_PASSWORD $SP_PASSWORD"
