@@ -8,4 +8,4 @@ jobs:
       Greeting: Hello
     steps:
       - name: "Say Hello Mona it's Monday"
-        run: echo "$Greeting SP_USERNAME ${{github.SP_USERNAME}} SP_PASSWORD ${{secrets.SP_PASSWORD}}"
+        run: echo "$Greeting SP_USERNAME ${{env.SP_USERNAME}} SP_PASSWORD ${{secrets.SP_PASSWORD}}"
