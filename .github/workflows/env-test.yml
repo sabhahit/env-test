@@ -12,4 +12,4 @@ jobs:
       Greeting: Hello
     steps:
       - name: "Say Hello Mona it's Monday"
-        run: echo "$Greeting SP_USERNAME ${{vars.SP_USERNAME1}} SP_PASSWORD ${{secrets.SP_PASSWORD1}}"
+        run: echo "$Greeting SP_USERNAME ${{vars.dev.SP_USERNAME1}} SP_PASSWORD ${{secrets.dev.SP_PASSWORD1}}"
